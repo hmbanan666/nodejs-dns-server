@@ -46,6 +46,14 @@ npm install
 npm run start:dev
 ```
 
+### How to check if it works
+
+```
+dig @localhost A google.com
+dig @ip.of.your.server.com A google.com
+dig @ip.of.your.server.com NS yourdomain.com
+```
+
 ## Why I need this?
 
 On our project we are serving a lot of clients with different domains. 
