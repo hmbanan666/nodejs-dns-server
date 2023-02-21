@@ -1,4 +1,4 @@
-# Super simple UDP nameserver for Node.js
+# Super simple UDP nameserver for Node.js 🐸
 
 ## How to install on server
 
@@ -53,6 +53,12 @@ dig @localhost A google.com
 dig @ip.of.your.server.com A google.com
 dig @ip.of.your.server.com NS yourdomain.com
 ```
+
+### "NS" records example
+![NS records](https://user-images.githubusercontent.com/25910785/220327539-de6f31b5-72e2-4648-a9b8-c50ea8e78be6.jpg)
+
+### "A" record example
+![A record](https://user-images.githubusercontent.com/25910785/220327606-d8570373-ea60-4057-9e8c-534815529491.jpg)
 
 ## Why I need this?
 
