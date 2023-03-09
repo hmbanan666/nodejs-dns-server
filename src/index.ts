@@ -18,9 +18,6 @@ socket.on('listening', function () {
 socket.on('message', function (message, remote) {
   const request = decode(message);
   const response = handleQuery(request);
-
-  console.log(remote, request?.questions);
-
   if (!response) return;
 
   socket.send(encode(response), remote.port, remote.address);
