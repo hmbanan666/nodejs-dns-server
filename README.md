@@ -5,7 +5,7 @@
 I'm using Ubuntu 22.04 LTS. First install Docker. After that:
 
 ```
-docker pull ghcr.io/hmbanan666/nodejs-dns-server:main
+docker pull ghcr.io/hmbanan666/nodejs-dns-server:latest
 ```
 
 Now when latest image is pulled, you can disable the default DNS server:
@@ -18,7 +18,7 @@ sudo systemctl disable systemd-resolved
 Ok, 53 port is free now. Let's run the container:
 
 ```
-docker run -d -p 53:53/tcp -p 53:53/udp --privileged --name nodejs-dns-server --restart=unless-stopped ghcr.io/hmbanan666/nodejs-dns-server:main
+docker run -d -p 53:53/tcp -p 53:53/udp --privileged --name nodejs-dns-server --restart=unless-stopped ghcr.io/hmbanan666/nodejs-dns-server:latest
 ```
 
 And that's it. Now you can use your server as a DNS server.
@@ -31,7 +31,7 @@ and pull the new image:
 docker stop nodejs-dns-server
 docker rm nodejs-dns-server
 sudo systemctl start systemd-resolved
-docker pull ghcr.io/hmbanan666/nodejs-dns-server:main
+docker pull ghcr.io/hmbanan666/nodejs-dns-server:latest
 ```
 
 After that stop the default DNS server again and run the container again.
