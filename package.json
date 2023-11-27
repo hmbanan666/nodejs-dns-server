@@ -1,12 +1,12 @@
 {
   "name": "nodejs-dns-server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Super simple UDP nameserver for serving A, NS and other records for your domains.",
   "main": "build/index.js",
   "type": "module",
   "scripts": {
     "start": "npm run build && node build/index.js",
-    "start:dev": "nodemon",
+    "start:dev": "tsx watch src/index.ts",
     "build": "rimraf ./build && tsc"
   },
   "repository": {
@@ -25,19 +25,18 @@
   },
   "homepage": "https://github.com/hmbanan666/nodejs-dns-server#readme",
   "dependencies": {
-    "dns-packet": "5.4.0",
-    "dotenv": "16.0.3"
+    "dns-packet": "5.6.1",
+    "dotenv": "16.3.1"
   },
   "devDependencies": {
-    "@types/dns-packet": "5.2.4",
-    "@types/node": "18.14.6",
-    "@typescript-eslint/eslint-plugin": "5.54.1",
-    "@typescript-eslint/parser": "5.54.1",
-    "eslint": "8.35.0",
-    "nodemon": "2.0.21",
-    "prettier": "2.8.4",
-    "rimraf": "4.4.0",
-    "ts-node": "10.9.1",
-    "typescript": "4.9.5"
+    "@types/dns-packet": "^5.6.3",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "6.12.0",
+    "@typescript-eslint/parser": "6.12.0",
+    "eslint": "8.54.0",
+    "prettier": "3.1.0",
+    "rimraf": "5.0.5",
+    "tsx": "4.5.0",
+    "typescript": "5.3.2"
   }
 }
