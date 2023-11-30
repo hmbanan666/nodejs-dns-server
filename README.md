@@ -21,7 +21,7 @@ Ok, 53 port is free now. Let's run the container:
 docker run -d -p 53:53/tcp -p 53:53/udp --privileged --name nodejs-dns-server --restart=unless-stopped ghcr.io/hmbanan666/nodejs-dns-server:latest
 ```
 
-And that's it. Now you can use your server as a DNS server.
+And that's it. Now you can use your server as a DNS server. 
 Don't forget about environment variables! Check **.env.example** for more info.
 
 If you want to update the image, you need to stop and remove the container, return the default DNS server
