@@ -1,6 +1,6 @@
 {
   "name": "nodejs-dns-server",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Super simple UDP nameserver for serving A, NS and other records for your domains.",
   "main": "build/index.js",
   "type": "module",
